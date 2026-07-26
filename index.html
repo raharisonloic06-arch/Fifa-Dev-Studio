@@ -94,7 +94,7 @@
           </defs>
 
           <!-- Lueur ambiante -->
-          <circle class="il-glow" cx="560" cy="430" r="300" fill="url(#ilGlowGrad)" filter="url(#ilSoftBlur)"/>
+          <circle class="il-glow" cx="560" cy="540" r="320" fill="url(#ilGlowGrad)" filter="url(#ilSoftBlur)"/>
 
           <!-- Symboles de code flottants -->
           <text class="il-float" x="140" y="190" style="--il-delay:0s; --il-dur:9s;">&lt;/&gt;</text>
@@ -106,49 +106,49 @@
 
           <g class="il-sway">
             <!-- Bureau -->
-            <rect x="260" y="565" width="680" height="18" rx="9" fill="var(--border)"/>
+            <rect x="260" y="695" width="680" height="18" rx="9"  style="fill:var(--border);"/>
 
             <!-- Écran gauche -->
-            <g transform="translate(430,300) rotate(-7)">
-              <rect x="-140" y="-95" width="200" height="140" rx="12" fill="var(--bg-alt)" stroke="var(--border)" stroke-width="2"/>
-              <rect x="-128" y="-83" width="176" height="104" rx="6" fill="rgba(0,102,255,0.07)" stroke="var(--accent-light)" stroke-opacity="0.45"/>
+            <g transform="translate(430,430) rotate(-7)">
+              <rect x="-140" y="-95" width="200" height="140" rx="12"   stroke-width="2" style="fill:var(--bg-alt);stroke:var(--border);"/>
+              <rect x="-128" y="-83" width="176" height="104" rx="6" fill="rgba(0,102,255,0.07)"  stroke-opacity="0.45" style="stroke:var(--accent-light);"/>
               <rect class="il-line" x="-112" y="-65" width="70" height="6" rx="3" style="--il-delay:0.1s"/>
               <rect class="il-line" x="-112" y="-49" width="120" height="6" rx="3" style="--il-delay:0.6s"/>
               <rect class="il-line" x="-112" y="-33" width="55" height="6" rx="3" style="--il-delay:1.1s"/>
               <rect class="il-line" x="-112" y="-17" width="95" height="6" rx="3" style="--il-delay:1.6s"/>
-              <rect x="-14" y="45" width="28" height="18" fill="var(--border)"/>
+              <rect x="-14" y="45" width="28" height="18"  style="fill:var(--border);"/>
             </g>
 
             <!-- Écran droit (plus grand, au premier plan) -->
-            <g transform="translate(690,285) rotate(5)">
-              <rect x="-150" y="-105" width="270" height="175" rx="14" fill="var(--bg-alt)" stroke="var(--border)" stroke-width="2"/>
-              <rect x="-136" y="-91" width="242" height="142" rx="8" fill="rgba(0,102,255,0.09)" stroke="var(--accent-light)" stroke-opacity="0.55"/>
+            <g transform="translate(690,415) rotate(5)">
+              <rect x="-150" y="-105" width="270" height="175" rx="14"   stroke-width="2" style="fill:var(--bg-alt);stroke:var(--border);"/>
+              <rect x="-136" y="-91" width="242" height="142" rx="8" fill="rgba(0,102,255,0.09)"  stroke-opacity="0.55" style="stroke:var(--accent-light);"/>
               <rect class="il-line" x="-118" y="-70" width="80" height="7" rx="3.5" style="--il-delay:0.2s"/>
               <rect class="il-line" x="-118" y="-52" width="150" height="7" rx="3.5" style="--il-delay:0.7s"/>
               <rect class="il-line" x="-118" y="-34" width="60" height="7" rx="3.5" style="--il-delay:1.2s"/>
               <rect class="il-line" x="-118" y="-16" width="170" height="7" rx="3.5" style="--il-delay:1.7s"/>
               <rect class="il-line" x="-118" y="2" width="100" height="7" rx="3.5" style="--il-delay:2.2s"/>
               <rect class="il-line" x="-118" y="20" width="40" height="7" rx="3.5" style="--il-delay:2.7s"/>
-              <rect class="il-cursor" x="-76" y="20" width="10" height="8" rx="1.5" fill="var(--accent-light)"/>
-              <rect x="-16" y="70" width="32" height="20" fill="var(--border)"/>
+              <rect class="il-cursor" x="-76" y="20" width="10" height="8" rx="1.5"  style="fill:var(--accent-light);"/>
+              <rect x="-16" y="70" width="32" height="20"  style="fill:var(--border);"/>
             </g>
 
             <!-- Silhouette du développeur -->
             <g class="il-person">
-              <path d="M495,565 C495,522 508,512 555,512 C602,512 615,522 615,565 Z" fill="url(#ilPersonGrad)"/>
-              <circle cx="555" cy="475" r="44" fill="url(#ilPersonGrad)"/>
-              <path d="M520,458 A38,38 0 0 1 590,458" fill="none" stroke="var(--accent-light)" stroke-opacity="0.5" stroke-width="2"/>
-              <path class="il-arm il-arm-l" d="M505,522 Q498,546 520,558" fill="none" stroke="url(#ilPersonGrad)" stroke-width="11" stroke-linecap="round" style="--il-delay:0s"/>
-              <path class="il-arm il-arm-r" d="M605,522 Q612,546 590,558" fill="none" stroke="url(#ilPersonGrad)" stroke-width="11" stroke-linecap="round" style="--il-delay:0.35s"/>
+              <path d="M495,695 C495,652 508,642 555,642 C602,642 615,652 615,695 Z" fill="url(#ilPersonGrad)"/>
+              <circle cx="555" cy="605" r="44" fill="url(#ilPersonGrad)"/>
+              <path d="M520,588 A38,38 0 0 1 590,588" fill="none"  stroke-opacity="0.5" stroke-width="2" style="stroke:var(--accent-light);"/>
+              <path class="il-arm il-arm-l" d="M505,652 Q498,676 520,688" fill="none" stroke="url(#ilPersonGrad)" stroke-width="11" stroke-linecap="round" style="--il-delay:0s"/>
+              <path class="il-arm il-arm-r" d="M605,652 Q612,676 590,688" fill="none" stroke="url(#ilPersonGrad)" stroke-width="11" stroke-linecap="round" style="--il-delay:0.35s"/>
             </g>
 
             <!-- Clavier -->
-            <rect x="505" y="552" width="100" height="14" rx="4" fill="var(--surface-strong)" stroke="var(--border)"/>
-            <circle class="il-key" cx="518" cy="559" r="1.8" fill="var(--accent-light)" style="--il-delay:0.1s"/>
-            <circle class="il-key" cx="536" cy="559" r="1.8" fill="var(--accent-light)" style="--il-delay:0.5s"/>
-            <circle class="il-key" cx="554" cy="559" r="1.8" fill="var(--accent-light)" style="--il-delay:0.9s"/>
-            <circle class="il-key" cx="572" cy="559" r="1.8" fill="var(--accent-light)" style="--il-delay:1.3s"/>
-            <circle class="il-key" cx="590" cy="559" r="1.8" fill="var(--accent-light)" style="--il-delay:1.7s"/>
+            <rect x="505" y="682" width="100" height="14" rx="4"   style="fill:var(--surface-strong);stroke:var(--border);"/>
+            <circle class="il-key" cx="518" cy="689" r="1.8"  style="fill:var(--accent-light);--il-delay:0.1s"/>
+            <circle class="il-key" cx="536" cy="689" r="1.8"  style="fill:var(--accent-light);--il-delay:0.5s"/>
+            <circle class="il-key" cx="554" cy="689" r="1.8"  style="fill:var(--accent-light);--il-delay:0.9s"/>
+            <circle class="il-key" cx="572" cy="689" r="1.8"  style="fill:var(--accent-light);--il-delay:1.3s"/>
+            <circle class="il-key" cx="590" cy="689" r="1.8"  style="fill:var(--accent-light);--il-delay:1.7s"/>
           </g>
         </svg>
       </div>

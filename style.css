@@ -119,6 +119,13 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   margin-bottom: 14px;
 }
 
+/* Halo de lisibilité — garde le texte net même au-dessus de l'illustration animée */
+.hero-title, .hero-subtitle, .hero .eyebrow {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 24px var(--bg), 0 0 46px var(--bg), 0 0 80px var(--bg);
+}
+
 .text-gradient {
   background: linear-gradient(100deg, var(--accent-light), #7CB8FF 60%, var(--accent));
   -webkit-background-clip: text;
@@ -296,15 +303,13 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.9;
-  mask-image: radial-gradient(ellipse 640px 360px at 50% 30%, transparent 0%, transparent 58%, black 100%);
-  -webkit-mask-image: radial-gradient(ellipse 640px 360px at 50% 30%, transparent 0%, transparent 58%, black 100%);
+  opacity: 0.85;
 }
 .il-scene { width: 100%; height: 100%; display: block; }
 
-.il-glow { animation: ilPulse 6s ease-in-out infinite; transform-origin: 560px 430px; }
+.il-glow { animation: ilPulse 6s ease-in-out infinite; transform-origin: 560px 540px; }
 
-.il-sway { animation: ilSway 7s ease-in-out infinite; transform-origin: 600px 580px; }
+.il-sway { animation: ilSway 7s ease-in-out infinite; transform-origin: 600px 700px; }
 
 .il-line {
   fill: var(--accent-light);
@@ -366,14 +371,10 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 }
 
 @media (max-width: 860px) {
-  .hero-illustration {
-    opacity: 0.55;
-    mask-image: radial-gradient(ellipse 90% 55% at 50% 26%, transparent 0%, transparent 55%, black 100%);
-    -webkit-mask-image: radial-gradient(ellipse 90% 55% at 50% 26%, transparent 0%, transparent 55%, black 100%);
-  }
+  .hero-illustration { opacity: 0.5; }
 }
 @media (max-width: 560px) {
-  .hero-illustration { display: none; }
+  .hero-illustration { opacity: 0.4; }
 }
 @media (prefers-reduced-motion: reduce) {
   .il-glow, .il-sway, .il-line, .il-cursor, .il-arm, .il-key, .il-float { animation: none; }
